@@ -13,45 +13,57 @@
 <body>
     <main class="container-player">
         <aside class="aside-menu-player">
+
             <article class="aside-music">
-                <img class="aside-music-photo"src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2017/06/16/14975872992361.jpg" alt="">
+                <img class="aside-music-photo"
+                    src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2017/06/16/14975872992361.jpg" alt="">
                 <div class="aside-music-info">
                     <strong class="aside-music-title">No hay canciones en la lista</strong>
                     <p class="aside-music-artist">-_-</p>
                 </div>
             </article>
+            
         </aside>
 
         <div class="main-player-container">
             <header class="player-header">
+
                 <strong>waves</strong>
                 <button id="library">Library</button>
+
             </header>
-            <section class="player-current">
+
+            <div class="song-container">
+
                 <article class="player-music-info">
                     <img class="player-music-photo"
-                        src="https://www.theaudiodb.com/images/media/album/cdart/ok-computer-50fc0e3b7183f.png"
-                        alt="">
+                        src="https://www.theaudiodb.com/images/media/album/cdart/ok-computer-50fc0e3b7183f.png" alt="">
                     <p>nada para reproducir</p>
                     <h1>._.</h1>
                 </article>
-                <article class="player-controllers-container">
-                    <div class="player-line">
-                        <div class="player-time"></div>
-                    </div>
-                    <div class="player-controllers">
-                        <span class="material-icons">
-                            skip_previous
-                        </span>
-                        <span class="material-icons">
-                            pause
-                        </span>
-                        <span class="material-icons">
-                            skip_next
-                        </span>
-                    </div>
-                </article>
-            </section>
+
+            </div>
+
+            <article class="player-controllers-container">
+
+                <div class="player-time">
+
+                </div>
+
+                <div class="player-controllers">
+                    <span class="material-icons" id="prev">
+                        skip_previous
+                    </span>
+                    <span class="material-icons" id="play">
+                        pause
+                    </span>
+                    <span class="material-icons" id="next">
+                        skip_next
+                    </span>
+                </div>
+
+            </article>
+
 
             <script type="module" src="main.js"></script>
         </div>
