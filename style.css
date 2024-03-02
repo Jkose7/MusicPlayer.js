@@ -11,13 +11,14 @@
 
 .container-player{
     display: flex;
+    position: relative;
+    height: 100vh;
 }
 
 
 /*ASIDE MENU*/
 .aside-menu-player{
-    width: 20%;
-    min-width: 200px;
+    width: 18vw;
     height: 100vh;
     background-color: #fff;
 
@@ -25,20 +26,32 @@
 }
 
 .main-player{
-    width: 80%;
+    width: 82vw;
     height: 100vh;
     background-color: #e4e4e4;
 
-    transition: .3s ease all;
+    transition: .5s ease all;
 }
+
+.aside-hidden{
+    width: 0;
+    min-width: 0;
+}
+
+.main-hidden{
+    width: 100%;
+}
+
 
 .aside-music{
     display: flex;
     align-items: center;
     width: 100%;
+    min-width: 300px;
     padding: 10px 10px;
     gap: 10px;
-    transition: .3s ease all;
+
+    transition: .5s ease all;
 
     &:hover{
         background-color: #a51dff78;
@@ -91,12 +104,16 @@
 .player-music-photo{
     width: 30%;
     object-fit: cover;
+    aspect-ratio: 1/1;
     border-radius: 100%;
     box-shadow: 0px 0px 40px #a51dff78;
 
     animation: 8s linear rotation-card infinite;
 }
 
+span{
+    cursor: pointer;
+}
 
 @keyframes rotation-card{
     to{
@@ -143,15 +160,6 @@
     display: flex;
     width: 25vw;
     justify-content: space-between;
-}
-
-.aside-hidden-main{
-    width: 100%;
-}
-
-.aside-hidden{
-    width: 0%;
-    min-width: 0px;
 }
 
 @media (max-width: 600px) {
